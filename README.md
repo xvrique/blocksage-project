@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="public/assets/icon.png" alt="BlockSage Logo" width="120" />
+  
+  # 🦉 BlockSage: The Shield of DeFi
+  
+  **Decentralized Risk Intelligence & Gamified Education Hub**
 
-## Getting Started
+  [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://solana.com/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+  [![Framer Motion](https://img.shields.io/badge/Framer_Motion-FF0055?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-First, run the development server:
+  <p align="center">
+    "Don't Trust, Verify. Empowering the next generation of savvy on-chain investors."
+    <br />
+    <a href="https://github.com/xvrique/blocksage-project/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/xvrique/blocksage-project/issues">Request Feature</a>
+  </p>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛡️ The Vision
+In a Web3 landscape filled with sophisticated "rug pulls" and "pump-and-dumps," **BlockSage** acts as a decentralized shield. We bridge the gap between complex on-chain forensics and retail users through an intuitive, gamified interface inspired by **Soul.io** aesthetics.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Core Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔍 Real-Time Risk Analytics
+- **Rug Pull Indicator:** Automated scanning for unverified contracts, hidden mint functions, and unlocked liquidity.
+- **Insider Tracking:** Real-time monitoring of developer wallets and "alpha" addresses to detect early dumping patterns.
+- **Hold-Time Profiling:** Statistical analysis of token distribution to identify whale clusters and community health.
 
-## Learn More
+### 🎮 Gamified Learning Ecosystem
+- **Soul-Inspired UI:** High-fidelity, "Cyber-Minimalist" experience with fluid state transitions.
+- **$BLS Reward System:** Integrated **$BLS (Edu Points Token)** to reward users for conducting research and maintaining "Safe-Trading" streaks.
+- **Sage AI Interaction:** A guided user journey that makes blockchain security engaging and accessible.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Technical Stack
+- **Frontend:** Next.js 15 (App Router Architecture), React 19.
+- **Logic:** TypeScript for robust, type-safe blockchain interactions.
+- **Animation:** Framer Motion for immersive gamification.
+- **Blockchain:** Solana Web3.js / @solana/spl-token for real-time data fetching.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
