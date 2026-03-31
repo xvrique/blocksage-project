@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #06080F;
+  --color-foreground: #E8E8ED;
+  --color-primary: #6C63FF;
+  --color-accent-pink: #FF6B9D;
+  --color-accent-cyan: #4ECDC4;
+  --color-safe: #2ECC71;
+  --color-warning: #F39C12;
+  --color-danger: #E74C3C;
+  --color-glass-bg: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+  --color-muted: #8B8FA3;
+  --color-surface: #0D1117;
+  --color-surface-raised: #161B22;
+  --font-sans: var(--font-outfit);
+}
+
+@layer base {
+  :root {
+    --background: #06080F;
+    --foreground: #E8E8ED;
+    --primary: #6C63FF;
+    --accent-pink: #FF6B9D;
+    --accent-cyan: #4ECDC4;
+    --safe: #2ECC71;
+    --warning: #F39C12;
+    --danger: #E74C3C;
+  }
+}
+
+/* ─── Base ─── */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle dot grid — much softer than lines */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Warm ambient glow — softer, more organic */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at 20% 0%, rgba(108, 99, 255, 0.06), transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(255, 107, 157, 0.04), transparent 50%);
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(108, 99, 255, 0.3); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(108, 99, 255, 0.5); }
+
+/* ─── Section Flow Connectors ─── */
+.section-flow {
+  position: relative;
+}
+.section-flow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, rgba(108, 99, 255, 0.3), transparent);
+  pointer-events: none;
+}
+
+/* ─── Conversational Highlight ─── */
+.text-glow {
+  text-shadow: 0 0 40px rgba(108, 99, 255, 0.3);
+}
+
+/* ─── Smooth Hover Card ─── */
+.hover-lift {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(108, 99, 255, 0.08);
+}
+
+/* ─── Glitch but softer ─── */
+.glitch-text {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.glitch-text:hover {
+  text-shadow: -1px 0 rgba(108, 99, 255, 0.4), 1px 0 rgba(78, 205, 196, 0.4);
+  filter: brightness(1.15);
+}
+
+/* ─── Gradient text utility ─── */
+.gradient-text {
+  background: linear-gradient(135deg, #6C63FF, #4ECDC4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Wave divider ─── */
+.wave-divider {
+  position: relative;
+  overflow: hidden;
+}
+.wave-divider::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -5%;
+  right: -5%;
+  height: 60px;
+  background: var(--background);
+  border-radius: 0 0 50% 50%;
+}
+
